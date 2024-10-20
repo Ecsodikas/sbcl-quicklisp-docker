@@ -9,6 +9,6 @@ RUN cd /tmp && curl -O http://tenet.dl.sourceforge.net/project/sbcl/sbcl/2.4.9/s
 
 ENTRYPOINT sbcl --eval "(ql:quickload :swank)" \
     --eval "(setf swank::*loopback-interface* \"0.0.0.0\")" \
-    --eval "(swank:create-server :dont-close t)"
+    --eval "(swank:create-server :dont-close t :port 4005)"
 
 EXPOSE 4005
