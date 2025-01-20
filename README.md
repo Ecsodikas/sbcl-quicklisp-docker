@@ -1,7 +1,7 @@
 # sbcl-quicklisp-docker
 A docker image running [SBCL](https://www.sbcl.org) with quicklisp preinstalled and a swank server listening on port 4005.
 
-Currently the image only loads the current version of SBCL, which is currently 2.4.9.
+Currently the image only loads the current version of SBCL, which is currently 2.5.0.
 
 ## Setup
 
