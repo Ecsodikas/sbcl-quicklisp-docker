@@ -5,9 +5,18 @@ Currently the image only loads the current version of SBCL, which is currently 2
 
 ## Setup
 
-You can just clone the repo and `docker build -t <name> .` afterwards you can `docker run -it -p <host-port>:4005 <name>`. You can connect to the swank server via a swank client of your choice.
+You can use the image in two different ways.
 
-For example with the [swank-client](https://github.com/brown/swank-client) system from quicklisp.
+### From the Repository
+
+You can just clone the repo and `docker build -t <name> .` afterwards you can `docker run -it -p <host-port>:4005 <name>`.
+
+### Pull directly from Docker Hub
+
+Alternatively, you can do `docker pull ecsodikas/sbcl-quicklisp`.
+
+## Usage
+You can connect to the swank server via a swank client of your choice. For example with the [swank-client](https://github.com/brown/swank-client) system from quicklisp.
 
 ```
 CL-USER> (ql:quickload :swank-client)
