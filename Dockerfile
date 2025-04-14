@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG SBCL_VERSION="2.5.0"
+ARG SBCL_VERSION="2.5.3"
 
 RUN apk add --no-cache curl gcc sbcl make libc-dev linux-headers
 
